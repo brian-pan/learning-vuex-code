@@ -2,7 +2,10 @@
     <div>
         <h3>Todos</h3>
         <div class="todos">
-            <div class="todo"></div>
+            <!-- use v-for to loop through and output this div for each todo -->
+            <div v-for="todo in allTodos" :key="todo.id" class="todo">
+                {{todo.title}}
+            </div>
         </div>
     </div>
 </template>
