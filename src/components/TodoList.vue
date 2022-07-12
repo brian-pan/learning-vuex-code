@@ -5,6 +5,7 @@
             <!-- use v-for to loop through and output this div for each todo -->
             <div v-for="todo in allTodos" :key="todo.id" class="todo">
                 {{todo.title}}
+                {{console.log(allTodos)}}
             </div>
         </div>
     </div>
